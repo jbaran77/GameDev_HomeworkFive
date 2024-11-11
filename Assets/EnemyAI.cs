@@ -11,6 +11,7 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] float chaseRange = 10;
 
+
     NavMeshAgent navMeshAgent;
 
     float distanceToTarget = Mathf.Infinity;
@@ -25,8 +26,14 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
-        if(distanceToTarget <= chaseRange){
+        if(distanceToTarget > navMeshAgent.stoppingDistance){
+            GetComponent<Animator>().SetBool("Attack", false);
+            GetComponent<Animator>().SetTrigger("Move");
             navMeshAgent.SetDestination(target.position);
+        }
+
+        if(distanceToTarget <= navMeshAgent.stoppingDistance){
+            GetComponent<Animator>().SetBool("Attack", true);
         }
         
     }
