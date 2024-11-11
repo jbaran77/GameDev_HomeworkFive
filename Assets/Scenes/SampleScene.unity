@@ -821,7 +821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.565
+      value: -1.066
       objectReference: {fileID: 0}
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1982,6 +1982,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1735308575439446863, guid: 554fb84cca766c645a12c50d5b57f097, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3583471915614931293, guid: 554fb84cca766c645a12c50d5b57f097, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4325786949634841737, guid: 554fb84cca766c645a12c50d5b57f097, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -1992,7 +2000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317694284653542558, guid: 554fb84cca766c645a12c50d5b57f097, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 1.57
       objectReference: {fileID: 0}
     - target: {fileID: 7317694284653542558, guid: 554fb84cca766c645a12c50d5b57f097, type: 3}
       propertyPath: m_LocalPosition.z
